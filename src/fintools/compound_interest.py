@@ -34,7 +34,7 @@ def annual_to_monthly_rate(annual_rate: float) -> float:
     if annual_rate < 0:
         raise ValueError("年利は0以上である必要があります")
 
-    return (1 + annual_rate) ** (1 / 12) - 1
+    return float((1 + annual_rate) ** (1 / 12) - 1)
 
 
 def monthly_to_annual_rate(monthly_rate: float) -> float:

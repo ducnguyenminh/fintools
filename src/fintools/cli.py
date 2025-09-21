@@ -28,7 +28,7 @@ def format_currency(amount: float, currency: str = "¥") -> str:
     return f"{currency}{amount:,.0f}"
 
 
-def cmd_annual_to_monthly(args) -> None:
+def cmd_annual_to_monthly(args: argparse.Namespace) -> None:
     """年利から月利への変換コマンド"""
     try:
         monthly_rate = annual_to_monthly_rate(args.annual_rate / 100)
@@ -39,7 +39,7 @@ def cmd_annual_to_monthly(args) -> None:
         sys.exit(1)
 
 
-def cmd_monthly_to_annual(args) -> None:
+def cmd_monthly_to_annual(args: argparse.Namespace) -> None:
     """月利から年利への変換コマンド"""
     try:
         annual_rate = monthly_to_annual_rate(args.monthly_rate / 100)
@@ -50,7 +50,7 @@ def cmd_monthly_to_annual(args) -> None:
         sys.exit(1)
 
 
-def cmd_compound_interest(args) -> None:
+def cmd_compound_interest(args: argparse.Namespace) -> None:
     """複利計算コマンド"""
     try:
         result = compound_interest(
@@ -69,7 +69,7 @@ def cmd_compound_interest(args) -> None:
         sys.exit(1)
 
 
-def cmd_present_value(args) -> None:
+def cmd_present_value(args: argparse.Namespace) -> None:
     """現在価値計算コマンド"""
     try:
         result = present_value(

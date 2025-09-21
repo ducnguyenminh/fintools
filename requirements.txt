@@ -1,0 +1,5 @@
+# Core dependencies
+# Currently no external dependencies required
+
+# Development dependencies (install with: pip install -r requirements-dev.txt)
+# These are also defined in pyproject.toml under [project.optional-dependencies]

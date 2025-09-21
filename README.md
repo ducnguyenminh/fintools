@@ -1,5 +1,10 @@
 # FinTools 📊
 
+[![CI/CD Pipeline](https://github.com/aozk/fintools/actions/workflows/ci.yml/badge.svg)](https://github.com/aozk/fintools/actions/workflows/ci.yml)
+[![codecov](https://codecov.io/gh/aozk/fintools/branch/main/graph/badge.svg)](https://codecov.io/gh/aozk/fintools)
+[![PyPI version](https://badge.fury.io/py/fintools.svg)](https://badge.fury.io/py/fintools)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 金融計算に特化したPythonツールライブラリです。複利計算、利回り計算、投資リターン分析など、金融関連の計算を簡単に行うことができます。
 
 ## 特徴

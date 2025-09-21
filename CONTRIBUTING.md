@@ -113,23 +113,23 @@ def test_annual_to_monthly_rate():
 例:
 ```python
 def compound_interest(
-    principal: float, 
-    annual_rate: float, 
-    years: int, 
+    principal: float,
+    annual_rate: float,
+    years: int,
     compounding_frequency: int = 1
 ) -> float:
     """
     複利計算を行います。
-    
+
     Args:
         principal: 元本
         annual_rate: 年利（小数表記、例：0.05 = 5%）
         years: 投資期間（年）
         compounding_frequency: 年間複利回数（デフォルト：1）
-    
+
     Returns:
         複利計算後の金額
-    
+
     Examples:
         >>> compound_interest(1000000, 0.05, 10)
         1628894.6267749023

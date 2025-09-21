@@ -6,15 +6,12 @@ FinTools コマンドラインインターフェース
 
 import argparse
 import sys
-from typing import Optional
 
 from .compound_interest import (
     annual_to_monthly_rate,
-    monthly_to_annual_rate,
     compound_interest,
+    monthly_to_annual_rate,
     present_value,
-    effective_annual_rate,
-    continuous_compounding,
 )
 
 

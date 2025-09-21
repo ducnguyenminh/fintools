@@ -6,7 +6,7 @@ FinToolsプロジェクトへの貢献を歓迎します！このドキュメン
 
 ### Issues（問題報告・機能要求）
 
-- バグを発見した場合や新機能のアイデアがある場合は、[Issues](https://github.com/your-username/fintools/issues)で報告してください
+- バグを発見した場合や新機能のアイデアがある場合は、[Issues](https://github.com/aozk/fintools/issues)で報告してください
 - 既存のIssueを確認して、重複を避けてください
 - 明確で詳細な説明を提供してください
 
@@ -31,7 +31,7 @@ FinToolsプロジェクトへの貢献を歓迎します！このドキュメン
 
 ```bash
 # リポジトリをクローン
-git clone https://github.com/your-username/fintools.git
+git clone https://github.com/aozk/fintools.git
 cd fintools
 
 # 仮想環境を作成

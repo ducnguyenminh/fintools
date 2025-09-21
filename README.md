@@ -14,10 +14,10 @@
 
 ```bash
 # GitHubから直接インストール
-pip install git+https://github.com/your-username/fintools.git
+pip install git+https://github.com/aozk/fintools.git
 
 # または、ソースコードをクローンしてインストール
-git clone https://github.com/your-username/fintools.git
+git clone https://github.com/aozk/fintools.git
 cd fintools
 pip install -e .
 ```
@@ -113,7 +113,7 @@ python -m pytest --cov=fintools
 
 ## 作者
 
-- あなたの名前 - [@your-github-username](https://github.com/your-username)
+- aozk - [@aozk](https://github.com/aozk)
 
 ## 謝辞
 

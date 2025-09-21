@@ -22,7 +22,7 @@ class TestAnnualToMonthlyRate:
         """基本的な年利から月利への変換"""
         # 年利12%の場合
         annual_rate = 0.12
-        expected_monthly = (1.12 ** (1/12)) - 1
+        expected_monthly = (1.12 ** (1 / 12)) - 1
         result = annual_to_monthly_rate(annual_rate)
         assert abs(result - expected_monthly) < 1e-10
 
@@ -50,7 +50,7 @@ class TestMonthlyToAnnualRate:
         """基本的な月利から年利への変換"""
         # 月利1%の場合
         monthly_rate = 0.01
-        expected_annual = (1.01 ** 12) - 1
+        expected_annual = (1.01**12) - 1
         result = monthly_to_annual_rate(monthly_rate)
         assert abs(result - expected_annual) < 1e-10
 
@@ -80,8 +80,8 @@ class TestCompoundInterest:
         principal = 1000000
         annual_rate = 0.05
         years = 10
-        
-        expected = principal * (1.05 ** 10)
+
+        expected = principal * (1.05**10)
         result = compound_interest(principal, annual_rate, years)
         assert abs(result - expected) < 1e-6
 
@@ -91,8 +91,8 @@ class TestCompoundInterest:
         annual_rate = 0.12
         years = 5
         frequency = 12
-        
-        expected = principal * (1 + 0.12/12) ** (12 * 5)
+
+        expected = principal * (1 + 0.12 / 12) ** (12 * 5)
         result = compound_interest(principal, annual_rate, years, frequency)
         assert abs(result - expected) < 1e-6
 
@@ -138,7 +138,7 @@ class TestFutureValue:
         annual_rate = 0.05
         years = 10
         frequency = 4
-        
+
         result1 = future_value(principal, annual_rate, years, frequency)
         result2 = compound_interest(principal, annual_rate, years, frequency)
         assert result1 == result2
@@ -152,7 +152,7 @@ class TestPresentValue:
         future_val = 1628894.63
         annual_rate = 0.05
         years = 10
-        
+
         result = present_value(future_val, annual_rate, years)
         # 複利計算の逆なので、元本に近い値になることを確認
         assert abs(result - 1000000) < 1
@@ -162,7 +162,7 @@ class TestPresentValue:
         original_pv = 1000000
         annual_rate = 0.05
         years = 10
-        
+
         fv = compound_interest(original_pv, annual_rate, years)
         back_to_pv = present_value(fv, annual_rate, years)
         assert abs(back_to_pv - original_pv) < 1e-6
@@ -204,7 +204,7 @@ class TestContinuousCompounding:
         principal = 1000000
         annual_rate = 0.05
         years = 10
-        
+
         expected = principal * math.exp(annual_rate * years)
         result = continuous_compounding(principal, annual_rate, years)
         assert abs(result - expected) < 1e-6
@@ -230,7 +230,7 @@ class TestEdgeCases:
         principal = 1000000
         annual_rate = 0.0001  # 0.01%
         years = 1
-        
+
         result = compound_interest(principal, annual_rate, years)
         assert result > principal
         assert result < principal * 1.001
@@ -240,7 +240,7 @@ class TestEdgeCases:
         principal = 1000
         annual_rate = 1.0  # 100%
         years = 1
-        
+
         result = compound_interest(principal, annual_rate, years)
         assert result == 2000
 
@@ -249,7 +249,7 @@ class TestEdgeCases:
         principal = 1000000
         annual_rate = 0.05
         years = 2.5
-        
+
         result = compound_interest(principal, annual_rate, years)
-        expected = principal * (1.05 ** 2.5)
+        expected = principal * (1.05**2.5)
         assert abs(result - expected) < 1e-6

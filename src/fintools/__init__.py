@@ -19,7 +19,7 @@ from .compound_interest import (
 
 __all__ = [
     "annual_to_monthly_rate",
-    "monthly_to_annual_rate", 
+    "monthly_to_annual_rate",
     "compound_interest",
     "future_value",
     "present_value",

